@@ -1,0 +1,6 @@
+<div id="space-wrapper">
+    <button (click)="getUsers()">Get List Users</button>
+    <ul *ngFor="let user of ( users | async )">
+        <li *ngIf="user">{{ user.username }} | {{ user.displayName }} | {{ user.email }}</li>
+    </ul>
+</div>

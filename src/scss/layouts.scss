@@ -1,0 +1,24 @@
+@import 'colors';
+
+#navbar {
+    width: 100%;
+    height: 45px;
+    border-bottom: 1px solid $dark;
+    position: fixed;
+}
+
+#sidenav {
+    width: 10%;
+    height: 100%;
+    border-right: 1px solid $dark;
+    margin-top: 45px;
+    position: fixed;
+}
+
+#container {
+    width: 100%;
+    height: 100%;
+    margin-left: 10%;
+    margin-top: 45px;
+    position: fixed;
+}

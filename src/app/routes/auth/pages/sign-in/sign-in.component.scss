@@ -1,0 +1,131 @@
+@import 'src/scss/mixin.scss';
+
+#login {
+    display: table;
+    height: 100%;
+    width: 100%;
+
+    .login-wrapper {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+
+        .caption {
+            margin-bottom: 20px;
+        }
+        
+        .sub-caption {
+            padding: 30px 0 10px;
+            border-top: 1px solid #e8e2e2;
+            font-family: "Oswald", Helvetica, sans-serif;
+            font-size: 16px;
+        }
+    
+        #login-form {
+            border: 2px solid #e6e6e6;
+            background-color: #f3f3f3;
+            border-radius: 10px;
+            box-shadow: 0px 0px 1px #ddd;
+            padding: 50px;
+            width: 450px;
+            margin: 0 auto;
+    
+            h2 {
+                text-align: center;
+                border-bottom: 0;
+                margin: 15px 0;
+                text-transform: uppercase;
+                font-size: 28px !important;
+                color: #333;
+                text-align: center;
+            }
+            
+            h4 {
+                width: 330px;
+                margin: 0 auto;
+                text-align: center;
+            }
+        }
+
+        .social-btns-wrapper {
+            button {
+                margin: 2px 0;
+                width: 230px;
+                border: 1px solid #c5ccd0;
+                font-size: 14.5px;
+                background-color: #cdd4d8;
+                color: #000000;
+                padding: 5px 15px 4px;
+                text-align: left;
+                opacity: .8;
+                
+                i {
+                    font-size: 1.5em;
+                    margin: 1px 15px 0 13px;
+                    color: white;
+                    width: 21px;
+                    color: #eee;
+                    
+                    &:before {
+                        display: block;
+                        text-align: center;
+                    }
+                }
+                
+                &:hover {
+                    cursor: pointer !important;
+                    color: black;
+                    background-color: #d1d9de;
+                    opacity: 1;
+                    
+                    i {
+                        color: white;
+                    }
+                }
+            }
+            
+            img {
+                width: 32px;
+            }
+
+            .provider {
+                margin-left: 10px;
+            }
+        }
+    }
+}
+
+@include mobile-sm_max {
+    #login-wrapper {
+        height: 100vh;
+        background-color: #f3f3f3;
+        
+        #login-form {
+            width: 100%;
+            border-radius: 0;
+            border: 0;
+            box-shadow: 0 0 0 transparent;
+        
+            h2 {
+                font-size: 17px;
+            }
+            
+            h4 {
+                width: 100%;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+@include range_mobile-tablet {
+    #login-wrapper {
+        margin: 0 auto;
+        
+        #login-form {
+            h4 {
+                width: 290px;
+            }
+        }
+    }
+}

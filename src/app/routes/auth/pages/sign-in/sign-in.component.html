@@ -1,0 +1,30 @@
+<div id="login">
+    <div class="login-wrapper">
+        <div id="login-form">
+            <img src="../assets/icons/root.png" alt="educ logo" class="logo-img responsive-img" />
+  
+            <h2 class="brand">Cloud Education</h2>
+  
+            <h4 class="caption">Cloud Operator Platform will help you have a great experiences. Let's go!</h4>
+            
+            <h3 class="sub-caption">To begin, sign in with your social account:</h3>
+  
+            <div class="social-btns-wrapper" fxLayout="column" fxLayoutAlign="center center">
+              <button mat-flat-button (click)="onLogin('Google')" fxLayoutAlign="start center">
+                <img src="../assets/icons/google.png" alt="" srcset="">
+                <span class="provider" mat-line>Login with Google</span>
+              </button>
+  
+              <button mat-flat-button (click)="onLogin('Amazon')" fxLayoutAlign="start center">
+                <img src="../assets/icons/amazon.png" alt="" srcset="">
+                <span class="provider" mat-line>Login with Amazon</span>
+              </button>
+              
+              <button mat-flat-button (click)="onLogin('Facebook')" fxLayoutAlign="start center">
+                <img src="../assets/icons/facebook.png" alt="" srcset="">
+                <span class="provider" mat-line>Login with Facebook</span>
+              </button>
+            </div>
+        </div>
+    </div>
+  </div>

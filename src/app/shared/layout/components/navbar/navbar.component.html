@@ -1,0 +1,11 @@
+<nav id="navbar">
+    <div class="wrapper">
+        <ul class="nav-items">
+            <li class="item left">
+                <a [routerLink]="['home']" class="brand">CEDU &nbsp;</a>
+                <span>Hello <span> {{ auth?.user?.displayName }}  !</span></span>
+            </li>
+            <li class="item right" (click)="auth.signOut()">Sign Out</li>
+        </ul>
+    </div>
+</nav>

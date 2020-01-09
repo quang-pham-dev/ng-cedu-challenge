@@ -1,0 +1,58 @@
+{
+  "compilerOptions": {
+    "importHelpers": true,
+    "sourceMap": true,
+    "declaration": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "resolveJsonModule": true,
+    "noStrictGenericChecks": true,
+    "noImplicitAny": false,
+    "strict": true,
+    "downlevelIteration": true,
+    "module": "esnext",
+    "target": "es2015",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2018",
+      "dom"
+    ],
+    "baseUrl": "",
+    "rootDir": "./",
+    "outDir": "./dist/out-tsc",
+    "paths": {
+      "@cedu/*": ["./src/app/*"],
+      "@cedu-routes/*": ["./src/app/routes/*"],
+      "@cedu-services/*": ["./src/app/services/*"],
+      "@cedu-models/*": ["./src/app/models/*"],
+      "@cedu-pipes/*": ["./src/app/pipes/*"],
+      "@cedu-guards/*": ["./src/app/guards/*"],
+      "@cedu-helpers/*": ["./src/app/helpers/*"],
+      "@cedu-directives/*": ["./src/app/directives/*"],
+      "@cedu-constants/*": ["./src/app/constants/*"],
+      "@cedu-shared-modules/*": ["./src/app/shared/modules/*"],
+      "@cedu-shared-layouts/*": ["./src/app/shared/layout/*"],
+      "@cedu-store/*": ["./src/app/store/*"]
+    },
+    "types": ["node"]
+  },
+  "exclude": [
+    "bazel-out",
+    "dist",
+    "node_modules",
+    "**/*/node_modules",
+    "modules/schematics/src/*/files/**/*"
+  ],
+  "compileOnSave": false,
+  "buildOnSave": false,
+  "atom": {
+    "rewriteTsconfig": false
+  },
+  "bazelOptions": {
+    "suppressTsconfigOverrideWarnings": true
+  }
+}
